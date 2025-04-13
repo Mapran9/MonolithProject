@@ -9,7 +9,6 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-// Load CSV Data to Table
 func LoadCSVToDB(tableName, filePath string) error {
 	file, err := os.Open(filePath)
 	if err != nil {
